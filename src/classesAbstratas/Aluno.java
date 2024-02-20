@@ -1,7 +1,7 @@
-package aulaPooWorkspace;
+package classesAbstratas;
 
-public class Aluno extends Pessoa{
-
+public abstract class Aluno extends Pessoa implements Media{
+	
 	double teste, prova;
 	
 	public double getTeste() {
@@ -15,8 +15,5 @@ public class Aluno extends Pessoa{
 	}
 	public void setProva(double prova) {
 		this.prova = prova;
-	}
-	public double getMedia() {
-		return (teste + prova) / 2;
 	}
 }
